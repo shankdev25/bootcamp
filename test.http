@@ -1,0 +1,53 @@
+### get entityset
+GET http://localhost:4004/shanksrv/trainers
+
+### get entityset
+POST http://localhost:4004/shanksrv/trainers
+Content-Type: application/json
+
+{
+      "name": "BTP-Bootcamp",
+      "skill": "CAPM",
+      "trainer": "XYZ",
+      "location": "Virtual",
+      "room": "Zoom",
+      "trainee": null,
+      "duration": "2H"
+}
+
+### Create entity
+POST http://localhost:4004/shanksrv/trainers
+Content-Type: application/json
+
+{
+      "name": "BTP-Bootcamp",
+      "skill": "CAPM",
+      "trainer": "XYZ",
+      "location": "Virtual",
+      "room": "Zoom",
+      "trainee": null,
+      "duration": "2H"
+}
+
+### Update entity
+PUT http://localhost:4004/shanksrv/trainers/40baa9f2-a974-4e57-9918-c9f30f9f9519
+Content-Type: application/json
+
+{
+      "name": "BTP-Bootcamp1"
+}
+
+### Delete entity
+DELETE http://localhost:4004/shanksrv/trainers/40baa9f2-a974-4e57-9918-c9f30f9f9519
+Content-Type: application/json
+
+{}
+
+### action test
+
+POST http://localhost:4004/shanksrv/activatetraining
+Content-Type: application/json
+
+{
+      "id": "d6533664-af4e-4b36-975f-72b4f5f3881e"
+}
